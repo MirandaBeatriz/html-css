@@ -11,12 +11,14 @@
     <h1>Introdução ao HTML</h1>
     <h2>Funções básicas</h2>
     <h3>Comentários:</h3>
-    <p> Para adicionar comentários ao código deve-se usar &lt;!-- COMENTÁRIO AQUI --&gt; </p>
+    <p> Para adicionar comentários ao código deve-se usar <strong>&lt;!-- COMENTÁRIO AQUI --&gt;</strong>  </p>
 
     <h3>Símbolos:</h3>
     <p>Muitos símbolos são utilizados na construção do código, sendo assim, eles não podem ser usados normalmente dentro dos parágrafos. <br> Para isso deve-se usar:
-    <h5> LESS THAN:</h5> <p>Usado antes do símbolo. EXEMPLO: &+lt;</p>
-    <h5>GREATER THAN:</h5><p>Usado depois do símbolo. EXEMPLO: &+gt;</p>
+    <br>
+    <strong> LESS THAN:</strong> Usado antes do símbolo. EXEMPLO: &+lt;
+    <br>
+    <strong>GREATER THAN:</strong>Usado depois do símbolo. EXEMPLO: &+gt;
     </p>
     <h2>Hierarquia de títulos</h2>
     <p> Elementos de cabeçalho são implementados em seis níveis, &lt;h1&gt; é o mais importante e &lt;h6&gt; é o de menor importância. Um elemento de cabeçalho descreve brevemente o tópico da seção em que ele está. <br> As informações de cabeçalho podem ser usadas por agentes de usuário, por exemplo, para construir uma tabela de conteúdos para um documento automaticamente.</p>
@@ -71,7 +73,7 @@
     <h3>PNG</h3>
     <p>O formato Portable Network Graphics (PNG) surgiu em 1996, com o objetivo de substituir o formato GIF (que hoje voltou a ser popular graças ao WhatsApp e Instagram). Ele também é um formato compactado, mas não tanto quanto o JPEG. <br> A principal característica do PNG - e que o diferencia do JPEG - é a capacidade de configurar a opacidade de cada pixel (deixá-lo transparente ou com transparência limitada).</p>
     
-    <h3>Resumindo...</h3>
+    <strong>Resumindo...</strong> 
     <p>De forma resumida, optar sempre pelo formato JPEG com uma compactação entre 30% e 50%. O formato PNG só deverá ser usado quando precisarmos de transparência na foto.</p>
 
     <h3>Tag img em HTML5</h3>
@@ -79,21 +81,37 @@
     <br>
     Exemplo: 
     <br>
-    &lt; img src="LOCALIZAÇÃO DA IMAGEM" alt="TEXTO ALTERNATIVO" &gt;
+    <strong>&lt; img src="LOCALIZAÇÃO DA IMAGEM" alt="TEXTO ALTERNATIVO" &gt;</strong>
     </p>
     <img src="Imagens/css-150.png" alt="">
     <img src="Imagens/html5-150.png" alt="logo-html5">
 
     <h3>Favicon</h3>
     <p>Para usar um favicon no seu site, você precisa ter o arquivo do ícone, que geralmente está no formato ICO. <br>
-    IconArchive= Para baixar alguns ícones prontos;
-    favicon.cc= Desenhar seu favicon no site;
-    favicon.io= Criar um ícone personalizado, possibilidade de submeter qualquer imagem e baixar um pacote com vários formatos de favicon.
+    <strong>IconArchive=</strong>  Para baixar alguns ícones prontos; <br>
+    <strong>favicon.cc=</strong>  Desenhar seu favicon no site; <br>
+    <strong>favicon.io=</strong> Criar um ícone personalizado, possibilidade de submeter qualquer imagem e baixar um pacote com vários formatos de favicon.
     <br>
     Para isso, usa-se: 
     <br>
-    &lt;link rel="shortcut icon" href="LOCALIZAÇÃO DO ARQUIVO" type="image/x-icon"&gt;
+    <strong>&lt;link rel="shortcut icon" href="LOCALIZAÇÃO DO ARQUIVO" type="image/x-icon"&gt;</strong>
     </p>
 
+    <h2>Formatação de Texto</h2>
+    <h3>Semântica</h3>
+    <p>“Semântica é o significado dos vocábulos, por oposição à sua forma.”
+    <br>
+    A frase acima diz que uma palavra pode ter forma e significado, e que a semântica dá mais valor ao significado. Na HTML4, existiam tags como &lt;b&gt; que colocava um texto em negrito, &lt;u&gt; que colocava o termo sublinhado e &lt;blink&gt; que fazia o texto piscar. Essas eram tags que representavam apenas uma forma, determinavam somente um formato visual para chamar atenção, sem significado explícito.
+    <br>
+    Já a HTML5 chegou com o conceito de valorizar a semântica, logo suas tags tentam levar um significado embutido muito forte. Sendo assim, em HTML5, vemos de forma bastante evidente a presença do chamado HTML semântico ou tags semânticas ou ainda o conteúdo semântico. O intuito é deixar a apresentação gráfica apenas por conta das CSS.
+    </p>
+    <h3><strong>Negrito</strong> e <em>Itálico</em></h3>
+    <p>
+    <strong>Negrito:</strong> A tag &lt;strong&gt; significa que o termo delimitado possui força dentro da frase. Logo, ele aparecerá em negrito.
+    <br>
+    <strong>Itálico:</strong> Já a tag &lt;em&gt; significa que queremos dar ênfase (do Inglês <em>emphasis</em> ) ao termo.
+    Logo, ele aparecerá em itálico.
+    <br>
+    Note que, ao usar &lt;strong&gt; e &lt;em&gt; no lugar de &lt;b&gt; e &lt;i&gt;, existe mais significado aos termos e conteúdos. Como eles vão ser representados visualmente (forma), vai depender das folhas de estilo CSS.</p>
 </body>
 </html>

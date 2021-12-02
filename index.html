@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first blog</title>
+</head>
+<body>
+    <h1>Introdução ao HTML</h1>
+    <h2>Funções básicas</h2>
+    <h3>Comentários:</h3>
+    <p> Para adicionar comentários ao código deve-se usar &lt;!-- COMENTÁRIO AQUI --&gt; </p>
+
+    <h3>Símbolos:</h3>
+    <p>Muitos símbolos são utilizados na construção do código, sendo assim, eles não podem ser usados normalmente dentro dos parágrafos. <br> Para isso deve-se usar:
+    <h5> LESS THAN:</h5> <p>Usado antes do símbolo. EXEMPLO: &+lt;</p>
+    <h5>GREATER THAN:</h5><p>Usado depois do símbolo. EXEMPLO: &+gt;</p>
+    </p>
+    <h2>Tags HTML</h2>
+    <p> Elementos de cabeçalho são implementados em seis níveis, &lt;h1&gt; é o mais importante e &lt;h6&gt; é o de menor importância. Um elemento de cabeçalho descreve brevemente o tópico da seção em que ele está. <br> As informações de cabeçalho podem ser usadas por agentes de usuário, por exemplo, para construir uma tabela de conteúdos para um documento automaticamente.</p>
+
+    <H5>Exemplo:</H5>
+
+    <h1>Cabeçalho nível 1</h1>
+    <h2>Cabeçalho nível 2</h2>
+    <h3>Cabeçalho nível 3</h3>
+    <h4>Cabeçalho nível 4</h4>
+    <h5>Cabeçalho nível 5</h5>
+    <h6>Cabeçalho nível 6</h6>
+    
+    <h2>Parágrafos e quebras de linha</h2>
+    <h3>Parágrafos</h3>
+    <p>O elemento HTML &lt;p&gt; representa um parágrafo. Em HTML, parágrafos são usados para agrupar conteúdos relacionados de qualquer tipo, como imagens e campos de um formulário.<br> Parágrafos são Elementos block-level, e fecharão automaticamente caso outro Elemento block-level inicie antes da tag de fechamento &lt;/p&gt;. </p>
+
+    <h3>Quebra de linha</h3>
+    <p>O elemento HTML quebra-de-linha &lt;br&gt; produz uma quebra de linha em um texto. É muito útil caso seja necessário pular uma linha em algum lugar específico do parágrafo.</p>
+
+    <h2>Símbolos e emojis</h2>
+
+    <h3>Símbolos</h3>
+    <p>Existem muitos símbolos interesantes para se colocar no conteúdo do site, como:
+        &reg;
+        &copy;
+        &yen;
+        &dollar;
+        &delta;
+    <br> Para adicioná-los ao texto, basta inserir o nome do símbolo após o e comercial &.
+    </p>
+    <h3>Emojis &#x1F47B;</h3>
+    <p>No caso dos emojis é diferente, é necessário pesquisar o código de pontos.
+    Tendo já o código, para adicioná-lo ao código, deve-se usar &#x + Código. 
+    <br> Exemplo: &#x1F600; = &lt;&#x+1F600;&gt;<br>
+    &#x1F918;
+    &#x1F600;
+    <!--Usar o emojipedia-->
+    <br>
+    Um site para ter acesso aos códigos dos emojis é o Emojipedia (https://emojipedia.org)
+    </p>
+
+    <h2>Adição de Imagens</h2>
+    <p>Existem vários formatos de imagem, cada um com suas características, vantagens e desvantagens. <br> 
+    Porém, os dois formatos compactados mais usados para a criação de sites são: JPEG e PNG.</p>
+
+    <h3>JPEG</h3>
+    <p>O algoritmo de compactação JPEG é usado para gerar imagens fotográficas com um tamanho extremamente reduzido. Ele é amplamente utilizado por câmeras digitais modernas e programas de tratamento de imagens. <br>
+    A grande vantagem do uso de arquivos JPG (em formato JPEG) é gerar arquivos muito pequenos e que ocupam pouco espaço em disco. Isso é muito importante, pois ao colocar o site no ar, ele tem que ser leve e carregar as imagens muito rapidamente. <br> É necessário cuidado para não exagerar na hora de configurar o nível de compactação. Isso pode fazer com que a imagem fique horrível e toda borrada.</p>
+
+        
+    <h3>PNG</h3>
+    <p>O formato Portable Network Graphics (PNG) surgiu em 1996, com o objetivo de substituir o formato GIF (que hoje voltou a ser popular graças ao WhatsApp e Instagram). Ele também é um formato compactado, mas não tanto quanto o JPEG. <br> A principal característica do PNG - e que o diferencia do JPEG - é a capacidade de configurar a opacidade de cada pixel (deixá-lo transparente ou com transparência limitada).</p>
+    
+    <h3>Resumindo...</h3>
+    <p>De forma resumida, optar sempre pelo formato JPEG com uma compactação entre 30% e 50%. O formato PNG só deverá ser usado quando precisarmos de transparência na foto.</p>
+
+    <h3>Tag img em HTML5</h3>
+    <p>Para inserir imagens tanto salvas localmente quanto imagens disponíveis diretamente em algum site, é utilizada a tag img.
+    <br>
+    Exemplo: 
+    <br>
+    &lt; img src="LOCALIZAÇÃO DA IMAGEM" alt="TEXTO ALTERNATIVO" &gt;
+    </p>
+    <img src="Imagens/css-150.png" alt="">
+    <img src="Imagens/html5-150.png" alt="logo-html5">
+</body>
+</html>

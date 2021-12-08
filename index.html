@@ -83,7 +83,10 @@
     <br>
     <strong>&lt; img src="LOCALIZAÇÃO DA IMAGEM" alt="TEXTO ALTERNATIVO" &gt;</strong>
     </p>
-    <img src="Imagens/css-150.png" alt="">
+    <picture>
+
+        <img src="Imagens/css-150.png" alt=""></picture>
+    
     <img src="Imagens/html5-150.png" alt="logo-html5">
 
     <h3>Favicon</h3>
@@ -94,12 +97,15 @@
     <br>
     Para isso, usa-se: 
     <br>
-    <strong>&lt;link rel="shortcut icon" href="LOCALIZAÇÃO DO ARQUIVO" type="image/x-icon"&gt;</strong>
+    <code>
+        <strong>&lt;link rel="shortcut icon" href="LOCALIZAÇÃO DO ARQUIVO" type="image/x-icon"&gt;</strong>
+    </code>
+
     </p>
 
     <h2>Formatação de Texto</h2>
     <h3>Semântica</h3>
-    <p>“Semântica é o significado dos vocábulos, por oposição à sua forma.”
+    <p> <strong>“Semântica é o significado dos vocábulos, por oposição à sua forma.”</strong> 
     <br>
     A frase acima diz que uma palavra pode ter forma e significado, e que a semântica dá mais valor ao significado. Na HTML4, existiam tags como &lt;b&gt; que colocava um texto em negrito, &lt;u&gt; que colocava o termo sublinhado e &lt;blink&gt; que fazia o texto piscar. Essas eram tags que representavam apenas uma forma, determinavam somente um formato visual para chamar atenção, sem significado explícito.
     <br>
@@ -113,5 +119,83 @@
     Logo, ele aparecerá em itálico.
     <br>
     Note que, ao usar &lt;strong&gt; e &lt;em&gt; no lugar de &lt;b&gt; e &lt;i&gt;, existe mais significado aos termos e conteúdos. Como eles vão ser representados visualmente (forma), vai depender das folhas de estilo CSS.</p>
+
+    <h2>Listas com HTML5</h2>
+    <p>A linguagem html disponibiliza inumeros tipos de listas para que o conteúdo fique mais eficiente.</p>
+
+    <h3>Listas Ordenadas</h3>
+    <p><em>Ordered Lists</em> são todas aquelas listas em que a ordem dos itens nela presentes importam. <br>
+    Para criar uma OL basta usar a tag <strong>&lt;ol&gt;</strong> e a tag <strong>&lt;li&gt;</strong>: <br>
+    
+    <code>
+        <strong>&lt;ol&gt; <br>
+        &lt;li&gt;Item 1&lt;/li&gt; <br>
+        &lt;li&gt;Item 2&lt;/li&gt; <br>
+    &lt;/ol&gt;
+    </strong>
+    </code> <br>
+
+    A tag ol possui o parâmetro <em>type</em>, que permite a configuração do tipo de marcador da lista, tendo como opções: <br>
+    <ul>
+        <li><strong>1-</strong> Valor padrão. Cria listas numeradas. Ex: 1,2,3,4,...</li>
+        <li><strong>A-</strong> Cria listas alfabéticas em maiúsculo. Ex: A,B,C,D,...</li>
+        <li><strong>a-</strong> Cria listas alfabéticas em minúsculo. Ex: a,b,c,d,...</li>
+        <li><strong>I-</strong> Cria listas com algarismos romanos maiúsculos. Ex: I,II,III,IV,...</li>
+        <li><strong>i-</strong> Cria listas com algarismos romanos minúsculos. Ex: i,ii,iii,iv,...</li>
+    </ul> <br>
+    Também é possível indicar o início da contagem utilizando o parâmetro  <strong>&lt;start&gt;</strong>: <br>
+    <strong>
+        &lt;ol type="I" start="5"&gt; &lt;/ol&gt;
+    </strong>
+    </p>
+
+    <h3>Lista Não Ordenadas</h3>
+    <p><em>Unordered Lists</em> são aquelas onde a ordem dos itens não vai influenciar em seu significado. Ela apenas organiga os itens, <strong>sem classificar</strong>. <br>
+    Para criar uma UL basta usar a tag <strong>&lt;ul&gt;</strong> e a tag <strong>&lt;li&gt;</strong>: 
+    </p>
+    <code>
+        <strong>&lt;ul&gt; <br>
+        &lt;li&gt;Item 1&lt;/li&gt; <br>
+        &lt;li&gt;Item 2&lt;/li&gt; <br>
+        &lt;/ul&gt;
+        </strong>
+    </code> 
+    
+    <p>
+    Com o parâmetro <em>type</em> é possível configurar o marcador da lista. <br>
+    <ul>
+        <li><strong>disc:</strong> Valor padrão. Bola preta totalmente preenchida;</li>
+        <li><strong>circle:</strong> Bola preta sem preenchimento;</li>
+        <li><strong>square:</strong> Quadrado preto totalmente preenchido.</li>
+    </ul>
+    </p>
+
+    <h3>Listas Mistas</h3>
+    <p>Quando listas são configuradas dentro de outras listas. Pode ocorrer tanto uma OL dentro de uma UL quando o contrário.</p>
+    <code>
+        <strong>&lt;ol&gt; <br>
+        &lt;li&gt;Tópico 1&lt;/li&gt; <br>
+        &lt;li&gt;Tópico 2&lt;/li&gt; <br>
+        &lt;ol type="a"&gt; <br>
+        &lt;li&gt;Tópico 2.1&lt;/li&gt; <br>
+        &lt;li&gt;Tópico 2.2&lt;/li&gt; <br>
+        &lt;/ol&gt;
+        </strong>
+    </code> <br>
+    <p>
+        Os itens da lista insterna ficam deslocados em relação ao item 2, indicando que essa é uma <strong>sublista</strong> do item 2.
+    </p>
+    <h3>Listas de Definições</h3>
+    <p>São listas sem marcadores, porém são compostas por seus itens e suas descrições, como um dicionário.</p>
+    <p>Para criá-la deve-se utilizar a tag &lt;dl&gt;, sendo cada termo na lista indicado pela tag &lt;dt&gt; e suas definições pela &lt;dd&gt;.</p>
+    <code>
+        <strong>&lt;dl&gt; <br>
+        &lt;dt&gt;Item 1:&lt;/dt&gt; <br>
+        &lt;dd&gt;Descrição Item 1&lt;/dd&gt; <br>
+        &lt;dt&gt;Item 2:&lt;/dt&gt; <br>
+        &lt;dd&gt;Descrição Item 2&lt;/dd&gt; <br>
+        &lt;/dl&gt;
+        </strong>
+    </code> 
 </body>
 </html>

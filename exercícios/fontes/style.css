@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Importação a partir do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/*Seletor para fontes baixadas*/
+@font-face {
+    font-family: 'LOR';
+    src: url('fontes/anirm___.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    /*
+    Tipos de format()
+    -opentype(otf)
+    -truetype (ttf)
+    -embedded-opentype
+    truetype-aat (Apple Advanced Typography)
+    -sgv
+    */
+}
+
+/*
+    Medidas Absolutas:
+    cm,mm, in, px, pt, pc
+    Medidas Relativas:
+    em, ex, rem, vw, vh, %
+    16px geralmente = 1em
+
+    *--Usar sempre em ou px--*
+    */
+
+*{
+    text-align: justify;
+}
+
+body{
+    background-image: linear-gradient(#054919,#030113);
+    /*
+    SHORTHAND FONT
+    -font-style-> font-wight-> font-size-> font-family
+    ***tudo em um comando só!***
+    */
+    font: normal bold 1em 'Yanone Kaffeesatz', sans-serif;
+}
+
+main{
+    background-color: #fff;
+    width: 1050px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #0a0236c5;
+}
+
+h1{
+    font-family: 'LOR', serif;
+    font-weight:normal;
+    text-align: center;
+}
+
+h2{
+    font:normal lighter 2em 'Fredericka the Great', cursive; 
+}
+
+p{
+    text-indent: 20px; /*define a indentação (ou tabulação)*/
+}

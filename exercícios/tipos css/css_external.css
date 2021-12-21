@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    text-align: justify;
+}
+
+body{
+    background-color: beige;
+    color: darkslategrey;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    padding: auto;
+    margin: 100px;
+}
+
+h1{
+    text-align: center;
+    font: bold bolder 2em 'Times';
+}
+
+a{
+    color:rgb(128, 58, 0);
+    font: italic bold 1em;
+}

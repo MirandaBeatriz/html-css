@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    background-image: linear-gradient(to bottom,#D6DAD9, #627D98); 
+    background-image: linear-gradient(to bottom,#FFFFFF, #A9B6CC); 
     background-attachment: fixed;
+
 }
 
 main{
@@ -20,19 +21,23 @@ main{
 
 p{
     text-align: justify;
+    font-size: 1em;
+    text-indent: 20px;
+    
 }
 
 h1{
-    color: #921329;
+    color: #63320E;
     text-align: center;
-    text-shadow: 1px 1px 3px #6d0d1d8f;
+    text-shadow: 1px 1px 3px #422109c7;
 }
 
 h2{
-    color: #102A43;
+    color: #95998A;
+    text-decoration: underline;
 }
 
 a{
-    color:#803a00;
+    color:#BDCC94;
     font-style: italic;
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        /*SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        /*Pseudo classe para sites ou pag já visitadas*/
+        a:visited{
+            color:crimson ;
+        }
+        a:hover{
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        /*Pseudo classe para quando o link está sendo clickado*/
+        a:active{
+            color: darkgoldenrod;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.google.com.br">GitHub</a> </li>
+        <li><a href="https://www.google.com.br">Facebook</a> </li>
+        <li><a href="https://www.google.com.br">Instagram</a> </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: darkcyan;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        /*Representação de classe*/
+        div.escondido{
+            background-color: #ffff;
+            border: 0;
+        }
+
+        /*Representação de Pseudo Classe: especifica um estado especial do elemento selecionado;
+        hover é um tipo, usado em qualquer botão sobre o qual o ponteiro do usuário esteja passando sobre
+        */
+        div.escondido:hover{
+            font-weight: bold;
+        }
+
+        /*Representação de filho >p 
+        O paragrafo faz parte da div
+        */
+        div.escondido > p{
+            display: none;
+        }
+
+        div.block:hover{
+            background-color: darkturquoise;
+        }
+
+        div.escondido:hover > p{
+            display: block;
+            font-weight: bolder;
+            background-color: firebrick;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block">01</div>
+    <div class="block">02</div>
+    <div class="block">03</div>
+
+    <h1>Exemplo de hover</h1>
+    <p>Texto escondido</p>
+    <div class="escondido">
+        Passe o mouse aqui :)
+        <p>AGORA VOCÊ ME VÊ</p>
+    </div>
+</body>
+</html>

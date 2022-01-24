@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            background-color: gray;
+            height: 50px;
+            width: 800px;
+
+            /*Bordas devem ter espessura, tipo e cor*/
+            border-width: 2px;
+            border-style: solid;
+            border-color: indigo;
+
+            /*Ao estruturar o padding com shorthand deve-se seguir o sentido horário, top right bottom left*/
+            padding: 10px 10px 10px 10px;
+
+            /*Neste caso simplificado os valores na vertical valem 25px enquanto na horizontal está centralizado*/
+            margin: 30px auto;
+        }
+
+        a{
+            /*Shorthands também valem para a borda*/
+            /*Seguindo o sentido espessura preenchimento cor*/
+            border: 2px solid red;
+
+            /*Caso o padding seja igual para todos os lados, é necessário apenas o primeiro valor*/
+            padding: 5px;
+        }
+
+        p{
+            width: 1050px;
+            background-color: #fff;
+            text-indent: 5px;
+            text-align: justify;
+
+            padding: 5px;
+
+            margin: 25px auto;
+        }
+
+        .lorem{
+            outline: 10px dotted purple;
+        }
+    </style>
+</head>
+<body>
+    <h1> <!--H1 É um tipo de box level-->
+        Exemplo de box-level
+    </h1>
+
+    <p>
+        Parágrafos também são exemplos de box-level, mas os <a href="">LINKS</a> são exemplos de caixas inline-level.
+    </p>
+
+    <p class="lorem">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius incidunt quibusdam ullam delectus quaerat magnam, natus fuga dolore excepturi ut soluta voluptatibus velit harum, totam a nihil dolores eveniet. Deserunt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos aspernatur soluta, cum ab sit ex animi. Voluptate aspernatur rem atque delectus officiis quo vitae at beatae earum. Voluptates, vel?
+    </p>
+</body>
+</html>

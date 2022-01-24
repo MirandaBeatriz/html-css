@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            background-color: lightslategray;
+        }
+
+        header{
+            background-color: #fff;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        nav{
+            background-color: gray;
+            color: #fff;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        main{
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: gray;
+            padding: 10px;
+
+            text-align: justify;
+            text-indent: 5px;
+        }
+
+        article>aside{
+            background-color: rgb(92, 91, 91);
+        }
+
+        footer{
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <h1>
+            Site de Notícias 
+        </h1>
+
+        <nav> <!--MENU-->
+            <a href="">Conteúdo</a>
+            <a href="">Atualidades</a>
+            <a href="">Localização</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Nutrição Esportes Finanças</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Brasil</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rerum minus excepturi magnam deserunt, quas dignissimos, quos omnis sed nihil quibusdam iusto. Aperiam, deleniti voluptates eius deserunt autem accusamus rerum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto ut nostrum, mollitia repudiandae obcaecati aperiam. Cupiditate tenetur voluptates esse deserunt culpa! Voluptatibus magnam, reprehenderit repellendus culpa tenetur amet soluta.</p>
+                <aside>
+                    <p>Escrito por?...</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Internacional</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rerum minus excepturi magnam deserunt, quas dignissimos, quos omnis sed nihil quibusdam iusto. Aperiam, deleniti voluptates eius deserunt autem accusamus rerum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis architecto ut nostrum, mollitia repudiandae obcaecati aperiam. Cupiditate tenetur voluptates esse deserunt culpa! Voluptatibus magnam, reprehenderit repellendus culpa tenetur amet soluta.</p>
+                <aside>
+                    <p>Escrito por?...</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+</body>
+</html>

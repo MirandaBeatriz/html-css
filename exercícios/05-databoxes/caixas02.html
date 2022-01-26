@@ -8,52 +8,90 @@
 
     <style>
         body{
-            background-color: lightslategray;
+            background-color: #fff;
+            margin: 0px;
         }
 
         header{
             background-color: #fff;
-            margin: 10px;
-            padding: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
         }
 
         nav{
-            background-color: gray;
-            color: #fff;
+            background-color: #808080;
+            width: 850px;
+            margin: auto;
             text-align: right;
+
+            /*BOX-SHADOW:
+            Deslocamento horizontal
+            Deslocamento vertical
+            Espalhamento da sombra
+            Cor da sombra
+            */
+            box-shadow: 2px 2px 5px #0f0f0f9f;
+        }
+
+        nav > a{
+            color: #fff;
             text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
         }
 
         main{
-            background-color: #fff;
-            padding: 10px;
-            margin: 10px;
+            width: 850px;
+            background-color: #979494;
+            padding: 5px 10px 5px 10px;
+            margin: 10px auto;
+            border-radius: 20px 0px;
         }
 
         article{
-            background-color: gray;
-            padding: 10px;
+            background-color: #fff;
+            padding: 5px;
+
+            margin-bottom: 5px;
+
+            box-shadow: 2px 2px 5px #0f0f0f9f;
 
             text-align: justify;
             text-indent: 5px;
         }
 
         article>aside{
-            background-color: rgb(92, 91, 91);
+            background-color: #979494;
         }
 
         footer{
             background-color: #000;
             color: white;
             text-align: center;
-            padding: 1px;
-            margin: 0px;
+            padding: 3px;
+            margin-top: 0px;
+        }
+
+        footer > p{
+            margin: 0px;;
         }
 
 
         h1{
             text-align: center;
         }
+
+        h2{
+            margin: 0px;
+        }
+
+        section#noticias{
+            margin-bottom: 5px;
+        }  
     </style>
 </head>
 <body>
@@ -73,7 +111,12 @@
 
     <main>
         <section id="assuntos">
-            <p>Nutrição Esportes Finanças</p>
+            <p>
+                <a href="">Esportes</a>
+                <a href="">Saúde</a>
+                <a href="">Educação</a>
+                <a href="">Economia</a>
+            </p>
         </section>
         <section id="noticias">
             <article>

@@ -12,16 +12,16 @@
 /*CORES USADAS
     #4caf50
     #307032
-    #6dfc71
+    #3ddc84
     #419644
 */
 
 :root{
     --cor0: #fff;
-    --cor1: #6dfc71;
-    --cor2: #4caf50;
-    --cor3: #419644;
-    --cor4: #307032;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #355C47;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -145,5 +145,33 @@ main img.pequena{
     display: block;
     margin: auto;
 }
-
 /*------------------------------------------*/
+/*-------------------ASIDE------------------*/
+aside{
+    background-color: var(--cor1);
+    padding: 15px;
+    border-radius: 20px 0px;
+}
+
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+}
+/*------------------------------------------*/
+/*------------------RODAPÉ------------------*/
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: var(--cor0);
+    padding: 5px;
+}
+
+footer a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

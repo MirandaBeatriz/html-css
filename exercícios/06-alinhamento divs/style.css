@@ -17,9 +17,8 @@ header{
 
 main{
     width: 1000px;
-    height: 500px;
-    display: block;
-    margin: 30px auto 0px auto;
+    display: table;
+    margin: 30px auto 10px auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.274);
@@ -29,6 +28,7 @@ main{
     width: 300px;
     margin-left: 25px;
     margin-top: 25px;
+    margin-bottom: 25px;
     display: table;
     float: left;
 }
@@ -48,13 +48,26 @@ main{
     height: 40px;
     background-color: #058d8d;
     float: left;
-    border-radius: 10px;
-    margin-top: 10px;
+
+    display: table;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial Black, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    margin: 15px;
+    padding: 0px 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 a{
+    width: 100px;
+    height: 40px;
     text-align: center;
-    margin: auto;
+    margin: auto 133px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;

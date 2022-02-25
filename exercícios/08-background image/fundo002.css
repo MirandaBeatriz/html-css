@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    background-image: url("http://d20inc.com.br/wp-content/uploads/2018/05/26CAPA_SITE-384x288.png");
+    background-repeat: no-repeat;
+    background-position: left 200px center;
+}
+
+h1{
+    width: 400px;
+    text-align: center;
+    color: #ffffff;
+    font: Bold 40px Arial;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 100px auto 0px auto;
+}
+
+div p{
+    height: 149px;
+    width: 800px;
+    margin: 250px auto 250px 300px;
+    padding-top: 94px;
+    text-align: center;
+    color: #ffffff;
+    font: Bold 60px Arial;
+}

@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    /*background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;*/
+/*SHORTHANT - Background
+    color > image > position > repeat > [size] > attachment
+    
+*/
+    background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+    
+main{
+    background-color: white;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 10px;
+}

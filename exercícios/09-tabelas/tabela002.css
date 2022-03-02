@@ -23,6 +23,10 @@ td, th{
     border: 2px solid black;
 }
 
+tbody > tr:nth-child(2n){
+    background-color: rgba(184, 182, 182, 0.815);
+}
+
 thead,tfoot{
     background-color: gray;
 }

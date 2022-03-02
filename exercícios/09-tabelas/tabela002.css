@@ -6,6 +6,13 @@ h1{
     text-align: center;
 }
 
+caption{
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgba(202, 202, 202, 0.815);
+    border-top: 2px solid black;
+}
+
 table{
     width: 500px;
     border: 2px solid black;

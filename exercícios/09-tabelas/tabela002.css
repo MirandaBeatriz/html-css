@@ -31,6 +31,12 @@ thead,tfoot{
     background-color: gray;
 }
 
+thead > tr > th{
+    position: sticky;
+    top: 0;
+    background-color: gray;
+}
+
 .num{
     text-align: right;
 }

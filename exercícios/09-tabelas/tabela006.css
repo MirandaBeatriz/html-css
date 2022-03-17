@@ -13,13 +13,13 @@ table{
     border-collapse: collapse;
 }
 
-td{
+thead,td,th{
     border: 1px solid #000;
     padding: 10px;
     text-align: center;
 }
 
-thead, td.sexo{
+thead, th.sexo{
     background-color: gray;
     font-weight: bold;
 }

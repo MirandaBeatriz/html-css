@@ -11,12 +11,12 @@
     <h1>Filmes Favoritos</h1>
     <table>
         <thead>
-            <td>Grupo</td>
-            <td>Nomes</td>
-            <td colspan="3">Filmes</td>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </thead>
         <tr>
-            <td rowspan="3" class="sexo">Mulheres</td>
+            <th rowspan="3" class="sexo" scope="rowgroup">Mulheres</th>
             <td>Ana Maria</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -35,7 +35,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3" class="sexo">Homens</td>
+            <th rowspan="3" class="sexo" scope="rowgroup">Homens</th>
             <td>Bruno</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -53,6 +53,12 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="colgroup">TOTAL</th>
+                <td>18</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>

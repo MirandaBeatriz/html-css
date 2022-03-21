@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Tipos de position
+1.Static - padrão, independentemente das marcações [top/botton/R/L], não vai se alterar;
+2.Fixed - Fixa o elemento na pagina, independentemente da rolagem do scrow;
+3.Sticky - Fixa na tela quando chegar a sua posição de rolagem;
+4.Relative - Se desloca com os parâmetros passados baseado na sua posição atual;
+5.Absolute - Se desloca de acordo com os parâmetros passados baseado na posição do elemento de hierarquia onde o position relative se encontra.Caso não exista declaração de relative,  ele será absoluto em relação ao body.
+*/
+
+.container{
+    position: relative;
+    margin: auto;
+    margin-top: 20vh;
+    width: 400px;
+    height: 400px;
+    background: purple;
+}
+
+.box{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    background: pink;
+}

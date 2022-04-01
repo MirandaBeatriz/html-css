@@ -1,0 +1,77 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 23rem;
+    width: 20rem;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 32px 32px 0 0px;
+    margin-bottom: 1rem;
+}
+
+.card__name{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    margin-left: 25%;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price__value{
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+}
+
+.price__value__old{
+    font-size: 0.8rem;
+    color: rgb(175, 175, 175);
+    text-decoration: line-through;
+    margin-right: 0.8rem;
+}
+
+.card__buy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: rgb(33, 175, 115);
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+
+.card__buy:hover{
+    background: rgb(4, 252, 148);
+}

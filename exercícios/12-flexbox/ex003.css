@@ -1,0 +1,26 @@
+.my-container{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #8a00cf;
+    border-radius: 8px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.my-item{
+    height: 50px;
+    background-color: #21f8bb;
+    padding: 30px;
+    border: 2px solid #fff;
+    
+    color: #8a00cf;
+    text-align: center;
+    font-weight: bold;
+
+    flex-basis: 20%;
+}

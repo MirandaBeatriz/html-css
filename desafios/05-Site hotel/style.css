@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    background-color: rgb(170, 169, 96);
+    width: 100%;
+    padding: 15px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
+}
+
+header .header-logo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: #191c06;
+}
+
+header nav{
+    display: flex;
+}
+
+header li a{
+    color: #191c06;
+    font-size: 20px;
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+/*HERO*/
+
+.hero{
+    display: flex;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.hero h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero h3, .hero h1{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
+    text-align: center;
+}
+
+.hero .btn{
+    background-color: #191c06;
+    border-radius: 4px;
+    color: #fff;
+    padding: 20px 50px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero h3{
+        font-size: 1.5rem;
+    }
+}
